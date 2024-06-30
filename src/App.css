@@ -5,3 +5,31 @@
     rgba(74, 47, 189, 0.5) 111.58%
   );
 }
+
+.icon-link {
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+  font-size: 2rem;
+}
+
+.icon-link:hover .icon {
+  transform: scale(1.2);
+}
+
+.link-label {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.icon-link:hover .link-label {
+  opacity: 1;
+  visibility: visible;
+}
