@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { FaUser, FaLock } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Header } from "../../components/Header";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -17,7 +16,6 @@ const Login = () => {
 
   return (
     <>
-      <Header />
       <Container>
         <Row className="justify-content-center mt-5">
           <Col md={6}>

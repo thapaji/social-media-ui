@@ -33,3 +33,41 @@
   opacity: 1;
   visibility: visible;
 }
+
+.sidebar {
+  background-color: #f5f6f7;
+  padding: 10px;
+  min-height: 88vh;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+  padding:1.5rem 1rem;
+}
+.sidebar a {
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s, font-size 0.3s;
+}
+
+.sidebar a:hover {
+  color: red;
+  transform: scale(1.1);
+  font-size: 1.1em;
+}
+
+.news-feed {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.post {
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.right-sidebar {
+  background-color: #f5f6f7;
+  padding: 10px;
+}

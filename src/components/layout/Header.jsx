@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Logo } from "./Logo";
-import { FaEnvelope, FaHome, FaShoppingBag, FaUser } from "react-icons/fa";
+import { FaBell, FaCalendar, FaEnvelope, FaHome, FaShoppingBag, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
@@ -13,19 +13,29 @@ export const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Link className="nav-link icon-link" to="/">
+          <Nav className="m-auto">
+            <Link className="nav-link icon-link px-4 mx-4" to="/">
               <FaHome className="icon" />
               <span className="link-label">Home</span>
             </Link>
-            <Link className="nav-link icon-link" to="/shop">
+            <Link className="nav-link icon-link px-4 mx-4" to="/shop">
               <FaShoppingBag className="icon" />
               <span className="link-label">Shop</span>
             </Link>
+            <Link className="nav-link icon-link px-4 mx-4" to="/events">
+              <FaCalendar className="icon" />
+              <span className="link-label">Events</span>
+            </Link>
+          </Nav>
+          <Nav className="ms-auto">
             {/* <Link className="nav-link icon-link">
               <FaPlus className="icon" style={{ color: "red" }} />
               <span className="link-label">Add</span>
             </Link> */}
+            <Link className="nav-link icon-link" to="/alerts">
+              <FaBell className="icon" />
+              <span className="link-label">Alerts</span>
+            </Link>
             <Link className="nav-link icon-link" to="/messages">
               <FaEnvelope className="icon" />
               <span className="link-label">Messages</span>
