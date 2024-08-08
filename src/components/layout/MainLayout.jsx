@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
+import PostStatus from "./PostStatus";
 
 const MainLayout = () => {
   return (
@@ -18,6 +19,7 @@ const MainLayout = () => {
 
       </div>
       <div className="main-content">
+        <PostStatus/>
 
       </div>
       <div className="right-sidebar">

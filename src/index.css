@@ -1,19 +1,10 @@
-:root{
-    --primary-color:#0E3748;
-    --bg-color:#E9E5E5;
-    --sidebar: #F0F0F0;
-    --activeIconColor:#00BFFF;
-
-
+:root {
+  --primary-color: #0e3748;
+  /* --primary-color:#f0f0f0; */
+  --bg-color: #e9e5e5;
+  --sidebar: #f0f0f0;
+  --activeIconColor: #00bfff;
+  --border-color:#F0EDFF
 }
-.navbar-center {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .navbar-center .nav-link {
-    flex: 1;
-    text-align: center;
-  }
-  
+
+
