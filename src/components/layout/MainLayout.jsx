@@ -9,19 +9,26 @@ const MainLayout = () => {
   return (
     <>
       <Header />
-      <Container fluid>
-        <Row>
-          <Col md={2} className="sidebar">
-            <LeftSidebar />
-          </Col>
-          <Col md={8}>
-            <Outlet />
-          </Col>
-          <Col md={2} className="sidebar">
-            <RightSidebar />
-          </Col>
-        </Row>
-      </Container>
+      <div className="main">
+      <Container fluid className="d-flex pt-3  gap-4 " >
+      
+        
+      <div className="left-sidebar">
+       <LeftSidebar/>
+
+      </div>
+      <div className="main-content">
+
+      </div>
+      <div className="right-sidebar">
+
+      </div>
+     
+ 
+ </Container>
+
+      </div>
+      
     </>
   );
 };
